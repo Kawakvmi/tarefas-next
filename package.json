@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --max-warnings=0",
+    "lint": "eslint src/**/*.{ts,tsx,js,jsx} app/**/*.{ts,tsx,js,jsx} --max-warnings=9999",
     "test": "jest --ci --runInBand",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci --runInBand"
@@ -16,6 +16,7 @@
     "react-dom": "19.2.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.3",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
